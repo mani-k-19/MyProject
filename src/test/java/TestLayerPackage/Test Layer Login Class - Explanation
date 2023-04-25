@@ -1,1 +1,1 @@
-In this example, we used TestNG annotations such as @BeforeClass to call base class common methods for browser and url sessions and @AfterClass to set up WebDriver instance, and @Test to define individual test cases.
+As shown in the example, we used TestNG annotations such as @BeforeClass to call base class common methods for browser and url sessions and @AfterClass to set up WebDriver instance, and @Test to define individual test cases.
