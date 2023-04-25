@@ -1,0 +1,1 @@
+In the config class, we can store and manage configuration settings such as URLs, browser options, and other project-specific configurations and read these settings during runtime using the Properties class from the Java standard library. We can easily manage and update configuration settings without changing the code.
