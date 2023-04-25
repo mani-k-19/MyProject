@@ -31,6 +31,8 @@ public class TestLayerLogin extends BaseClass {
 		screenshots("Login");
 		login = new POMLogin();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+		/*WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(50));
+		WebElement username = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("username")));*/
 	}
 	
 	@Test (priority=1)
@@ -65,9 +67,9 @@ public class TestLayerLogin extends BaseClass {
 	
 	/*@DataProvider(name="getdata")
 	public Object[][] data() {
-		return new Object[][] {{"Admin1"},{"Admin2"},{"Admin3"}};                  
+		return new Object[][] {{"Admin1"},{"Admin2"},{"Admin3"}};
 	}
-	@Test(priority=3, dataProvider="getdata")
+	@Test(priority=4, dataProvider="getdata")
 	public void Param(String keywords) throws InterruptedException {
 	login.typeUsername(keywords);
 		Thread.sleep(2000);
