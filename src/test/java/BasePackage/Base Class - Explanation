@@ -1,0 +1,1 @@
+This base class or common class contains common methods or functionalities that can be shared across multiple test classes. It serves as a central place to define common operations. For example in this case: setting up WebDriver, managing browser sessions, handling timeouts, and handling exceptions, etc.
