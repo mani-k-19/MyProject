@@ -5,8 +5,9 @@
     <classes>
       <class name="TestLayerPackage.TestLayerLogin">
         <methods>
-          <include name="Login" invocation-numbers="0 1 2"/>
+          <include name="validLogin"/>
           <include name="AfterMethod"/>
+          <include name="Login" invocation-numbers="0 1"/>
           <include name="initialsetup"/>
         </methods>
       </class> <!-- TestLayerPackage.TestLayerLogin -->

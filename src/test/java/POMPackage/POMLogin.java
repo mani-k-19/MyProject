@@ -10,7 +10,7 @@ public class POMLogin extends BaseClass {
 	
 	@FindBy(name="username") WebElement username;
 	@FindBy(name="password") WebElement password;
-	@FindBy(linkText=" Login ") WebElement loginButton;
+	@FindBy(css="#app > div.orangehrm-login-layout > div > div.orangehrm-login-container > div > div.orangehrm-login-slot > div.orangehrm-login-form > form > div.oxd-form-actions.orangehrm-login-action > button") WebElement loginButton;
 	
 	public POMLogin() {
 		PageFactory.initElements(driver,this);
@@ -26,6 +26,6 @@ public class POMLogin extends BaseClass {
 		password.sendKeys(password1);
 	}
 	public void clickButton() {
-		
+		loginButton.click();
 	}
 }
